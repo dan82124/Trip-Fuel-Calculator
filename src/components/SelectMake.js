@@ -78,7 +78,7 @@ export default class SelectMake extends Component{
           <option value="">Make...</option>
           {this.state.makeOptionList}
         </select>
-        {this.state.error && <p id="error">{this.state.error}</p>}{this.state.error && <p id="error">{this.state.error}</p>}
+        {this.state.error && <p className="error">{this.state.error}</p>}{this.state.error && <p id="error">{this.state.error}</p>}
       </div>
     );
   }

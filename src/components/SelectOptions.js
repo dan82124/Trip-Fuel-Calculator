@@ -75,7 +75,7 @@ export default class SelectOptions extends Component{
             <option value="">Option...</option>
             {this.state.optionsOptionList}
           </select>
-          {this.state.error && <p id="error">{this.state.error}</p>}
+          {this.state.error && <p className="error">{this.state.error}</p>}
         </div>
     );
   }

@@ -57,7 +57,7 @@ class App extends Component {
               <div className="col col-xs-4 title-container">
                 <Title/>
                 <Form getDirection={this.getDirection}/>
-                {this.state.error && <span id="error">{this.state.error}</span>}
+                {this.state.error && <span className="error">{this.state.error}</span>}
                 <Vehicle calculatedDist={distance}/>
               </div>
               <div className="col col-xs-8 form-container">

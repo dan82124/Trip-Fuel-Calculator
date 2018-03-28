@@ -75,7 +75,7 @@ export default class SelectYear extends Component{
           <option value="">Year...</option>
           {this.state.yearOptionList}
         </select>
-        {this.state.error && <p id="error">{this.state.error}</p>}
+        {this.state.error && <p className="error">{this.state.error}</p>}
       </div>
     );
   }
