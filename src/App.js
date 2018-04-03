@@ -54,13 +54,13 @@ class App extends Component {
         <div className="main">
           <div className="container">
             <div className="row">
-              <div className="col col-xs-4 title-container">
+              <div className="col col-md-5 title-container">
                 <Title/>
                 <Form getDirection={this.getDirection}/>
                 {this.state.error && <span className="error">{this.state.error}</span>}
                 <Vehicle calculatedDist={distance}/>
               </div>
-              <div className="col col-xs-8 form-container">
+              <div className="col col-md-7 form-container">
                 <MapContainer google={this.props.google} origin={this.state.origin} destination={this.state.destination} onDistance={this.handleDistance}/>
               </div>
             </div>

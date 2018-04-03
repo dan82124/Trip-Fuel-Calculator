@@ -70,7 +70,7 @@ export default class SelectYear extends Component{
     }
 
     return (
-      <div className="form-group col-6">
+      <div className="form-group col-md-6">
         <select id="selectYear" className="form-control custom-select"  onChange={this.handleChange} value={this.state.selectedYear}>
           <option value="">Year...</option>
           {this.state.yearOptionList}

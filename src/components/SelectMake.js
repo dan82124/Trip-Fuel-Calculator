@@ -73,7 +73,7 @@ export default class SelectMake extends Component{
       console.log("Make refreshed!");
     }
     return (
-      <div className="form-group col-6">
+      <div className="form-group col-md-6">
         <select id="selectMake" className="form-control custom-select"  onChange={this.handleChange} value={this.state.SelectedMake} >
           <option value="">Make...</option>
           {this.state.makeOptionList}

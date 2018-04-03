@@ -69,7 +69,7 @@ export default class SelectModel extends Component{
       this.handleClick(year,make);
     }
     return (
-      <div className="form-group col-6">
+      <div className="form-group col-md-6">
         <select id="selectModel" className="form-control custom-select" onChange={this.handleChange} value={this.state.SelectModel} >
           <option value="">Model...</option>
           {this.state.modelOptionList}

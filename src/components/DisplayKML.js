@@ -82,15 +82,15 @@ export default class DisplayKML extends Component{
     return (
       <div>
         <div className="form-row">
-          <div className="form-group col-4">
+          <div className="form-group col-md-4">
             <label>City (Km/100L)</label>
             <div className="form-control"><p className="result">{isNaN(cityKML)? '---' : Number(cityKML).toFixed(1)}</p></div>
           </div>
-          <div className="form-group col-4">
+          <div className="form-group col-md-4">
             <label>Highway (Km/100L)</label>
             <div className="form-control"><p className="result">{isNaN(highwayKML)? '---' : Number(highwayKML).toFixed(1)}</p></div>
           </div>
-          <div className="form-group col-4">
+          <div className="form-group col-md-4">
             <label>Fuel Type</label>
             <select className="form-control" onChange={this.handleChange} value={this.state.SelectFuel} >
               <option value=""></option>

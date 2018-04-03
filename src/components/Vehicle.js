@@ -115,13 +115,13 @@ export default class Vehicle extends Component{
           </div>
           <div className="form-group">
             <div className="form-row">
-              <div className="form-group col-6">
+              <div className="form-group col-md-6">
                 <div className="form-control">
                   <label>Traveled Distance</label>
                   <div><p className="result">{isNaN(calculatedDist) ? "---" : calculatedDist} Km</p></div>
                 </div>
               </div>
-              <div className="form-group col-6">
+              <div className="form-group col-md-6">
                 <div className="form-control align-self-stretch">
                   <label>Fuel Used</label>
                   <div><p className="result">{isNaN(fuelUsed) ? "---" : fuelUsed} L</p></div>

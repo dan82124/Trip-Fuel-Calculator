@@ -70,7 +70,7 @@ export default class SelectOptions extends Component{
       this.handleClick(year,make,model);
     }
     return (
-        <div className="form-group col-6">
+        <div className="form-group col-md-6">
           <select id="selectOptions" className="form-control custom-select" onChange={this.handleChange} value={this.state.selectedOptions} >
             <option value="">Option...</option>
             {this.state.optionsOptionList}
